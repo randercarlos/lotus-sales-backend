@@ -80,6 +80,7 @@ No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [
 ### Categorias
 
 * [Exibe Todas as Categorias]() : `GET http://localhost:3000/api/categories` `Status: 200 Ok`
+
 * [Cria Uma Categoria]() : `POST http://localhost:3000/api/categories` `Status: 201 Created OR status: 422 Unprocessable Entity`
 ```javascript
 {
@@ -87,7 +88,9 @@ No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [
 	 description (string, optional): "Categoria de Frutas, Verduras e Legumes"
 }
 ```
+
 * [Exibe Uma Categoria]() : `GET http://localhost:3000/api/categories/:id/` `Status: 200 Ok OR status: 404 not found`
+
 * [Atualiza Uma Categoria]() : `PUT http://localhost:3000/api/accounts/:id/` `Status: 200 Ok OR status: 404 not found OR status: 422 Unprocessable Entity`
 ```javascript
 {
@@ -95,12 +98,14 @@ No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [
 	 description (string, optional): "Categoria de Frutas, Verduras e Legumes"
 }
 ```
+
 * [Deleta uma Categoria]() : `DELETE http://localhost:3000/api/accounts/:id/` `Status: 200 Ok OR status: 404 not found`
 
 
 ### Produtos
 
 * [Exibe Todos os Produtos]() : `GET http://localhost:3000/api/products` `Status: 200 Ok`
+
 * [Cria Um Produto]() : `POST http://localhost:3000/api/products` `Status: 201 Created OR status: 422 Unprocessable Entity`
 ```javascript
 {
@@ -108,7 +113,9 @@ No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [
 	 description (string, optional): "Categoria de Frutas, Verduras e Legumes"
 }
 ```
+
 * [Exibe Um Produto]() : `GET http://localhost:3000/api/products/:id/` `Status: 200 Ok OR status: 404 not found`
+
 * [Atualiza Um Produto]() : `PUT http://localhost:3000/api/products/:id/` `Status: 200 Ok OR status: 404 not found OR status: 422 Unprocessable Entity`
 ```javascript
 {
@@ -121,11 +128,13 @@ No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [
 	 photo (file/image, optional): binary file,
 }
 ```
+
 * [Deleta Um Produto]() : `DELETE http://localhost:3000/api/products/:id/` `Status: 200 Ok OR status: 404 not found`
 
 ### Vendas
 
 * [Exibe Todos as Vendas]() : `GET http://localhost:3000/api/orders` `Status: 200 Ok`
+
 * [Cria Uma Venda]() : `POST http://localhost:3000/api/orders` `Status: 201 Created OR status: 422 Unprocessable Entity`
 ```javascript
 {
@@ -171,7 +180,9 @@ No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [
 }
 ```
 
+
 ### Relatório de Top 10 Produtos Mais e Menos Vendidos
+
 
 * [Exibe top 10 Produtos]() : `GET http://localhost:3000/api/reports/top10_product_sales` `Status: 200 Ok`
 ```javascript
@@ -182,6 +193,8 @@ No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [
 
 ### Preview de Email com dados de Total de Vendas, Faturamento, lucro, Top 10 Produtos Mais e Menos Vendidos
 
+
 * [Exibir email com dados de venda]() : `GET http://localhost:3000/api/reports/email_preview` `Status: 200 Ok`
+
 
 Desenvolvido por Rander Carlos :wave: [Linkedin!](https://www.linkedin.com/in/rander-carlos-caetano-freitas-308a63a8/)
