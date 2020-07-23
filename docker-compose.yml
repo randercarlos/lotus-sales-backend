@@ -1,0 +1,33 @@
+version: '2'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    volumes:
+      - ./__docker/mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_USER=lotus
+      - MYSQL_PASSWORD=12345
+      - MYSQL_DATABASE=lotus-sales
+      - MYSQL_ROOT_PASSWORD=96430409
+
+  laravel:
+    tty: true
+    image: docker.io/bitnami/laravel:7-debian-10
+    container_name: laravel
+    restart: always
+    environment:
+      - DB_HOST=mysql
+      - DB_DATABASE=lotus-sales
+      - DB_USERNAME=lotus
+      - DB_PASSWORD=12345
+    depends_on:
+      - mysql
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app
+    # privileged: true # Privileged mode could be required to run this container under Windows
