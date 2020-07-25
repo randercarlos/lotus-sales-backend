@@ -91,7 +91,7 @@ No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [
 
 * [Exibe Uma Categoria]() : `GET http://localhost:3000/api/categories/:id/` `Status: 200 Ok OR status: 404 not found`
 
-* [Atualiza Uma Categoria]() : `PUT http://localhost:3000/api/accounts/:id/` `Status: 200 Ok OR status: 404 not found OR status: 422 Unprocessable Entity`
+* [Atualiza Uma Categoria]() : `PUT http://localhost:3000/api/categories/:id/` `Status: 200 Ok OR status: 404 not found OR status: 422 Unprocessable Entity`
 ```javascript
 {
 	 name (string, required): "Frutas, Verduras e Legumes",
@@ -99,7 +99,7 @@ No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [
 }
 ```
 
-* [Deleta uma Categoria]() : `DELETE http://localhost:3000/api/accounts/:id/` `Status: 200 Ok OR status: 404 not found`
+* [Deleta uma Categoria]() : `DELETE http://localhost:3000/api/categories/:id/` `Status: 200 Ok OR status: 404 not found`
 
 
 ### Produtos
