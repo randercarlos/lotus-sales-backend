@@ -26,7 +26,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Angular 9](https://nodejs.org/en/)
+- [Laravel 7](https://laravel.com)
 
 
 ## 💻 Projeto
@@ -73,7 +73,7 @@ docker-compose up
 ```
 
 - Aguarde até que toda os serviços estejam ativos e as dependências do laravel estejam instaladas e as migrações instaladas. 
-No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [http://localhost:4200](http://localhost:4200).
+No final, o Docker  mostrará uma mensagem de que o Laravel estará rodando em [http://localhost:3000](http://localhost:3000).
 
 ## Endpoints do Sistema
 
